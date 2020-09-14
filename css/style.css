@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "Montserrat-Thin";
+    src: url(../fonts/Montserrat-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Monument-Regular";
+    src: url(../fonts/MonumentExtended-Regular.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Monument-Bold";
+    src: url(../fonts/MonumentExtended-Ultrabold.otf);
+    font-weight: bold;
+}
+
+
+
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: invert(100%);
+}
+.link-grow {
+    transform: scale(2);
+    background: black;
+}
+.logo {
+    height: 30px;
+}
+
+body {
+    position: relative;
+    font-family: "Monument-Regular";
+    background-color: #0c0c0c;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/background2.png");
+    overflow-x: hidden;
+    cursor: none;
+}
+
+#IM {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15vh;
+}
+#DEV, #DES, #RE, #COM, #PROF {
+    width: 100vw;
+    height: 101vh;
+}
+
+#DEV, #RE, #PROF {
+    width: 100vw;
+    height: 105vh;
+    margin-top: 15vh;
+    background-color: white;
+}
+
+.Headline {
+    padding-top: 1vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    -webkit-box-shadow: 0px 11px 10px 4px rgba(51, 51, 51, 0.75);
+    -moz-box-shadow: 0px 11px 10px 4px rgba(51, 51, 51, 0.75);
+    box-shadow: 0px 11px 10px 4px rgba(51, 51, 51, 0.75);
+    text-transform: uppercase;
+}
+
+.Headlineblack {
+    padding-top: 1vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 400%;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 11px 10px 4px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 11px 10px 4px rgba(0,0,0,0.20);
+    box-shadow: 0px 11px 10px 4px rgba(0,0,0,0.20);
+}
+
+#burgermenu {
+    width: 3vw;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    border: 10px;
+}
+
+a.homebutton{
+    margin: 0;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 0.5em;
+    font-family: 'Monument-Bold';
+    text-decoration: none;
+    border-radius: 70px;
+    font-size: 50px;
+    text-shadow: black;
+    transition: 0.3s ease-in-out;
+    cursor: none; 
+    z-index: -1;
+}
+.inverted-color {
+    backdrop-filter: invert(100%);
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    transition: 0.1s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: none;
+}
+
+.nav-link:hover {
+    font-size: 200%;
+}
+
+.navbar {
+    width: 28vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: -600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30% 0px 0px 60%;
+    transition: right 0.5s ease-in-out;
+}
+
+.nav-list {
+    text-align: center;
+}
+.nav-item {
+    list-style: none;
+    margin: 20px;
+}
+.hamburgermenu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: none;
+    
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #555;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(112, 112, 112);
+    transition: all 1s;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px)
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px)
+}
+
+.change {
+    right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .Headline{
+        font-size: 300%;
+    }
+    .Headlineblack{
+        font-size: 300%;
+    }
+}
+
+
+@media screen and (max-width: 860px) {
+    .Headline{
+        font-size: 200%;
+    }
+    .Headlineblack{
+        font-size: 200%;
+    }
+    .navbar {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: -1100px;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 0;
+        transition: top 0.5s ease-in-out;
+    }
+    .change {
+        top: 0;
+    }
+    body {
+        cursor: default;
+    }
+    .cursor {
+        width: 0;
+        height: 0;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .Headline{
+        font-size: 170%;
+    }
+    .Headlineblack{
+        font-size: 170%;
+    }
+}
