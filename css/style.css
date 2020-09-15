@@ -112,6 +112,8 @@ body {
 
 a.homebutton{
     margin: 0;
+    background: url(../img/oceangif.gif);
+    filter: grayscale();
     position: absolute;
     top: 50vh;
     left: 50vw;
@@ -127,6 +129,8 @@ a.homebutton{
     transition: 0.3s ease-in-out;
     cursor: none; 
     z-index: -1;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 .inverted-color {
     backdrop-filter: invert(100%);
