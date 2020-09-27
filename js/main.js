@@ -26,6 +26,9 @@ navLinks.forEach(link => {
     link.addEventListener('mouseleave', () => {
         mouseCursor.classList.remove('link-grow');
     });
+    link.addEventListener('click', () => {
+        navbar.classList.remove('change');
+    });
 });
 
 hamburgerMenu.forEach(line => {

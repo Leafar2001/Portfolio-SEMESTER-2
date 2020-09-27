@@ -181,7 +181,6 @@ a.homebutton{
     flex-direction: column;
     justify-content: space-around;
     cursor: none;
-    
 }
 
 ::-webkit-scrollbar {
