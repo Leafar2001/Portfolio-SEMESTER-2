@@ -27,7 +27,14 @@ html{
     font-weight: bold;
 }
 
-
+#Home {
+    background-color: #0c0c0c;
+    background-repeat: no-repeat;
+    background-image: url("../img/background2.png");
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
 
 .cursor {
     width: 3rem;
@@ -51,21 +58,18 @@ html{
 }
 
 body {
+    background-color: #0c0c0c;
     position: relative;
     font-family: "Monument-Regular";
-    background-color: #0c0c0c;
-    background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
-    background-image: url("../img/background2.png");
     overflow-x: hidden;
     cursor: none;
 }
 
 #IM {
     width: 100vw;
-    height: 100vh;
-    margin-top: 15vh;
+    height: 101vh;
 }
 #DEV, #DES, #RE, #COM, #PROF {
     width: 100vw;
@@ -74,7 +78,7 @@ body {
 
 #DEV, #RE, #PROF {
     width: 100vw;
-    height: 105vh;
+    height: 101vh;
     margin-top: 15vh;
     background-color: white;
 }
@@ -110,7 +114,7 @@ body {
     border: 10px;
 }
 
-a.homebutton{
+.homebutton{
     margin: 0;
     background: url(../img/oceangif.gif);
     filter: grayscale();
@@ -128,7 +132,7 @@ a.homebutton{
     text-shadow: black;
     transition: 0.3s ease-in-out;
     cursor: none; 
-    z-index: -1;
+    z-index: 1;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
