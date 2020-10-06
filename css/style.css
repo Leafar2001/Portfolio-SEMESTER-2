@@ -69,7 +69,7 @@ body {
 
 #IM {
     width: 100vw;
-    height: 101vh;
+    height: 101vh;0
 }
 #DEV, #DES, #RE, #COM, #PROF {
     width: 100vw;
@@ -231,6 +231,48 @@ body {
 
 .change {
     right: 0;
+}
+
+.cardw {
+    margin: auto;
+    margin-top: 15vh;
+    height: 50vh;
+    width: 20vw;
+    background-color: white;
+    transition: 0.2s ease-in-out;
+    border-radius: 1%;
+    text-align: center;
+}
+.cardw-text {
+    font-size: 200%;
+    margin: 0 auto;
+    padding-top: 3vh;
+}
+.button-container {
+    width: 100%;
+    margin-top: 37vh;
+}
+.button-container a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5% 8%;
+}
+.cardw:hover {
+    background-color: black;
+    height: 53vh;
+    width: 23vw;
+    color: white;
+    font-size: 115%;
+}
+.cardw:hover a{
+    color: white;
+    border: 2px solid white;
+}
+.button-container a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out
 }
 
 @media screen and (max-width: 1024px) {
