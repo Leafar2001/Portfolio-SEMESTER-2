@@ -298,13 +298,16 @@ body {
     font-size: 115%;
     box-shadow: #0c0c0c;
 }
-.cardb:hover{
+.cardb:hover {
     color: black;
     background-color: white;
     height: 53vh;
     width: 23vw;
     font-size: 115%;
     box-shadow: #0c0c0c;
+}
+.cardb:hover span {
+    color: black;
 }
 .cardw:hover a{
     color: white;
