@@ -69,7 +69,7 @@ body {
 
 #IM {
     width: 100vw;
-    height: 101vh;0
+    height: 101vh;
 }
 #DEV, #DES, #RE, #COM, #PROF {
     width: 100vw;
@@ -232,9 +232,11 @@ body {
 .change {
     right: 0;
 }
-
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
 .cardw {
-    margin: auto;
     margin-top: 15vh;
     height: 50vh;
     width: 20vw;
@@ -242,13 +244,37 @@ body {
     transition: 0.2s ease-in-out;
     border-radius: 1%;
     text-align: center;
+    box-shadow: 15px 15px 15px black;
+    justify-content: space-evenly;
+    
+}
+.cardb {
+    margin-top: 15vh;
+    height: 50vh;
+    width: 20vw;
+    background-color: #080808;
+    transition: 0.2s ease-in-out;
+    border-radius: 1%;
+    text-align: center;
+    box-shadow: 15px 15px 15px black;
+    justify-content: space-evenly;
 }
 .cardw-text {
     font-size: 200%;
     margin: 0 auto;
     padding-top: 3vh;
 }
+.cardb-text {
+    font-size: 200%;
+    margin: 0 auto;
+    padding-top: 3vh;
+    color: white;
+}
 .button-container {
+    width: 100%;
+    margin-top: 37vh;
+}
+.button-container-b {
     width: 100%;
     margin-top: 37vh;
 }
@@ -258,20 +284,44 @@ body {
     border: 2px solid black;
     padding: 5% 8%;
 }
+.button-container-b a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 5% 8%;
+}
 .cardw:hover {
-    background-color: black;
+    background-color: #080808;
     height: 53vh;
     width: 23vw;
     color: white;
     font-size: 115%;
+    box-shadow: #0c0c0c;
+}
+.cardb:hover{
+    color: black;
+    background-color: white;
+    height: 53vh;
+    width: 23vw;
+    font-size: 115%;
+    box-shadow: #0c0c0c;
 }
 .cardw:hover a{
     color: white;
     border: 2px solid white;
 }
+.cardb:hover a{
+    color: #080808;
+    border: 2px solid #080808;
+}
 .button-container a:hover {
     background-color: white;
     color: black;
+    transition: 0.3s ease-in-out
+}
+.button-container-b a:hover {
+    background-color: #080808;
+    color: white;
     transition: 0.3s ease-in-out
 }
 
